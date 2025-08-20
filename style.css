@@ -1,0 +1,590 @@
+:root{
+  --pr-color : #015E96;
+}
+
+/* Navigation Bar */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  transition: background-color ease-in-out;
+}
+.nav-color {
+  background: linear-gradient(138deg,rgba(246, 246, 246, 1) -35%, rgba(23, 98, 145, 1) 95%);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 112x;   
+  height: 59px;
+}
+
+.button {
+  width: 120px;
+  height: 30px;
+  border-radius: 10px ;
+  margin : 0px 47px 2px 20px;
+  background-color: #ffff;
+  color: var(--pr-color);
+  border: none;
+  font-weight: 700;
+}
+/* Hover Navbar */
+.button:hover {
+  box-shadow: 0 8px #999;
+  transition-duration: 0.45s;
+}
+
+
+.button:active{
+  transform: translateY(50px);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transition-duration: 0.1s;
+}
+
+/* Hero Section */
+
+#hero {
+  background: linear-gradient(138deg,rgba(246, 246, 246, 1) -35%, rgba(23, 98, 145, 1) 95%);
+  height: 100vh;
+  width: 100%;
+}
+
+.img-hero{
+  height: 580px;
+  width: 580px;
+}
+.hero-tagline h1{
+color: #ffff;
+font-weight: 700;
+font-size: 50px;
+line-height: 72px;
+}
+
+.hero-tagline p{
+  font-size: 16px;
+  color: #ffff;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 30px;
+  width: 650px;
+  height: 90px;
+  text-align: justify;
+  
+}
+
+.button-lg-primary {
+  width: 237px;
+  height: 70px;
+  background-color: #ffff;
+  color: var(--pr-color);
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+/* Hover Hero Section */
+
+.button-lg-primary span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-lg-primary :after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  
+}
+
+.button-lg-primary:hover {
+  box-shadow: 0 9px #999;
+}
+
+.button-lg-primary:hover span {
+  padding-right: 25px;
+}
+
+.button-lg-primary:hover span:after {
+  opacity: 1;
+  right: 0;
+  
+}
+
+.button-lg-primary:active{
+  transform: translateY(50px);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* About Us Section */
+
+#about-us {
+  position: relative;
+  height: 769px;
+  padding-top: 80px;       /* cukupkan agar konten tidak di‑behind navbar */
+  background-color: #fff;
+  
+}
+
+#about-us .container,
+#about-us .row {
+  height: 100%;
+}
+
+#about-us .ornament-left {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  height: 350.88px;
+  width: 669px;
+  object-fit: cover;
+  z-index: 1;
+
+  
+}
+
+#about-us .ornament-right {
+  position: absolute;
+  bottom: 0; 
+  right: 0;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  z-index: 1;
+
+ 
+}
+
+
+#about-us h2 {
+  color: var(--pr-color);
+  font-size: 48px;
+}
+
+#about-us p {
+  color: #005F98;
+  font-size: 24px;
+  line-height: 30px;
+  width: 1049px;
+  height: 288px;
+  text-align: justify;
+}
+/* Visi & Misi Section */
+#vission-mission .container{
+padding-left: 15px;
+padding-right: 15px;
+}
+#vision-mission .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#vision-mission {
+  background: linear-gradient(134deg,rgba(246, 246, 246, 0.38) -10%, rgba(23, 98, 145, 1) 84%);
+  padding-top: auto;
+  padding-bottom: auto;
+  height: 769px;
+  overflow: hidden;
+}
+.card-custom{
+  margin-top: 165px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.card-mission {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.card-title-custom {
+  font-weight: 800;
+  font-size: 48px;
+  color: var(--pr-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-mission li{
+  font-weight: 300;
+  font-size: 21px;
+  color: var(--pr-color);
+  text-align: justify;
+}
+
+.card-custom p{
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--pr-color);
+  text-align: center;
+}
+
+/* Our Services Section */
+
+#our-services {
+  padding-top: 40px;
+  height: 1807px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+h5 {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--pr-color);
+  padding-top: 50px;
+}
+
+.sub-title :hover {
+  font-size: 24px;
+  color: var(--pr-color);
+}
+
+.card-our-services {
+  width: 380px;
+  height: 313px;
+  border-radius: 20px;
+  background: linear-gradient(129deg,rgba(59, 58, 58, 0.38) 5%, rgba(23, 97, 144, 1) 100%);
+  padding: 40px;
+  position: relative;
+  z-index: 1;
+
+  transition: all .3s ease-in;
+  ;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #9FBACC;
+
+  transition: all .2s ease-in;
+}
+
+.card-our-services h6 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.card-our-services p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.bottom-box{
+  margin: 220px;
+}
+
+.bottom-boxx{
+  margin: -220px;
+}
+
+/* ornament kiri atas Our Services */
+#our-services .ornament-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 498px;  
+  height: auto;
+  object-fit: cover;
+  z-index: 0;    
+}
+
+/* ornament kanan atas Our Services */
+#our-services .ornament-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 285.54px;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* ornament kanan bawah Our Services */
+#our-services .ornament-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
+}
+/* Hover Our Services Section */
+.card-our-services:hover {
+  width: 380px;
+  height: 313px;
+  border-radius: 20px;
+  background-color: #36759D;
+
+  transition: all .3s ease-in;
+  transform: scale(1.1)
+}
+
+.card-our-services:hover .circle-icon{
+ background-color: #36759D;
+
+ transition: all .2s ease-in;
+ 
+}
+
+.card-our-services:hover h6 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.card-our-services:hover p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* Project Highlight Section */
+#highlight{
+  background: linear-gradient(134deg,rgba(246, 246, 246, 0.38) -20%, rgba(23, 98, 145, 1) 84%);
+  height: 1807px;
+  padding-top: 80px;
+}
+
+h7 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.card-project-highlight{
+  padding-top: 70px;
+}
+
+.card-project-highlight P {
+  font-weight: 400;
+  padding-top: 0px;
+  width: auto;
+  text-align: center;
+  color: #fff;
+}
+
+/* Why Choose US Section */
+
+.box-uhuy{
+  padding-top: 100px;
+}
+
+.card-pill-custom{
+   background: linear-gradient(173deg,rgba(59, 58, 58, 1) 10%, rgba(23, 97, 144, 1) 100%);
+   border: none;
+}
+
+.card-pill-custom.p-3{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#Why-Choose-Us h8 {
+  font-size: 40px;
+  color: var(--pr-color);
+ 
+}
+
+#Why-Choose-Us p {
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--pr-color);
+  width: 500px;
+  text-align: justify;
+ 
+}
+
+/* Contact Us Section */
+#Contact-Us{
+  background:linear-gradient(134deg,rgba(246, 246, 246, 0.38) -10%, rgba(23, 98, 145, 1) 84%);
+}
+
+h9{
+  font-weight: 800;
+  color: #fff;
+  font-size: 48px;
+}
+
+#Contact-Us P{
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  width: 500px;
+  text-align: justify;
+  margin-top: 25px;
+}
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 30px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  width: 500px; 
+
+}
+
+.icon-contact {
+  width: 29px;
+  height: 29px;
+  margin-right: 10px;
+}
+
+.card-contact {
+  width: 100%;
+  height: 445px;
+  background :#fff;
+  padding: 5px 48px;
+  border-radius: 20px;
+}
+
+.card-contact h5{
+  font-weight: 800;
+  font-size: 38px;
+  color: var(--pr-color);
+  text-align: center;
+  margin-bottom: 21px;
+  line-height: 60px;
+}
+
+.form-control {
+  background: #C7C7C7;
+  margin-top: 30px;
+}
+
+.form-floating label {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  left: 0;
+}
+
+.button-kontak{
+  height: 35px;
+  width: 181px;
+  border-radius: 20px;
+  background: var(--pr-color);
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 185px;
+  margin-right: 185px;
+  transition-duration: 1s;
+   cursor: pointer;
+
+}
+
+/* Hover Contact Us Section */
+
+.button-kontak:hover {
+  box-shadow: 0 8px #999;
+  transition-duration: 0.45s;
+}
+
+
+.button-kontak:active{
+  transform: translateY(50px);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transition-duration: 0.1s;
+}
+/* Footer Section */
+#footer {
+  background-color: #000;
+}
+
+/* logo + teks */
+.footer-brand {
+  display: flex;
+  align-items: center;
+}
+.footer-logo {
+  width: 60px;      /* sesuaikan */
+  height: auto;
+  margin-left: -30px;
+}
+.footer-text {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 5px ;
+  margin-left: -5px;
+}
+
+/* menu footer */
+.footer-nav {
+  padding-left: 0;
+  display: inline-flex;
+  
+}
+.footer-center {
+  gap: 1.5rem; 
+}
+
+.footer-nav li {
+  list-style: none;
+}
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-link:hover {
+  color: var(--pr-color);
+}
+
+.footer-copy{
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.kata {
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  margin-right: 29px;
+  margin-top: -5px;
+}
