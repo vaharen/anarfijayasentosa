@@ -41,6 +41,7 @@ body {
   color: var(--pr-color);
   border: none;
   font-weight: 700;
+  transition-duration: 1s;
 }
 /* Hover Navbar */
 .button:hover {
@@ -587,4 +588,5 @@ h9{
   color: #fff;
   margin-right: 29px;
   margin-top: -5px;
+
 }
